@@ -11,6 +11,16 @@ using System.Xml.Schema;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 //Matthew Lavelle
 //Key Commander Game
+//BUGS REPORT/TODOS
+/*
+ * 
+ * Right arrow symbol is never shown
+ * points system needs fixing 
+ * ui astetic
+ 
+ 
+ 
+ */
 namespace KeyCommander
 {
     public partial class KeyCommander : Form
