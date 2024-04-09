@@ -61,7 +61,6 @@
             this.Box3 = new System.Windows.Forms.PictureBox();
             this.Box2 = new System.Windows.Forms.PictureBox();
             this.Box1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox3)).BeginInit();
@@ -372,21 +371,11 @@
             this.Box1.TabIndex = 33;
             this.Box1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(635, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 45;
-            this.label1.Text = "label1";
-            // 
             // KeyCommander
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.Box12);
             this.Controls.Add(this.Box11);
             this.Controls.Add(this.Box10);
@@ -485,7 +474,6 @@
         private System.Windows.Forms.PictureBox Box3;
         private System.Windows.Forms.PictureBox Box2;
         private System.Windows.Forms.PictureBox Box1;
-        private System.Windows.Forms.Label label1;
     }
 }
 
