@@ -1,0 +1,10 @@
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\bin\Debug\KeyCommander.exe.config
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\bin\Debug\KeyCommander.exe
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\bin\Debug\KeyCommander.pdb
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\obj\Debug\KeyCommander.csproj.AssemblyReference.cache
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\obj\Debug\KeyCommander.KeyCommander.resources
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\obj\Debug\KeyCommander.Properties.Resources.resources
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\obj\Debug\KeyCommander.csproj.GenerateResource.cache
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\obj\Debug\KeyCommander.csproj.CoreCompileInputs.cache
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\obj\Debug\KeyCommander.exe
+C:\Users\mattl\source\repos\KeyCommander\KeyCommander\obj\Debug\KeyCommander.pdb
