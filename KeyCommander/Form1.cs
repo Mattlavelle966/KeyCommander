@@ -15,7 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 /*
  * l
  * Right arrow symbol is never shown
- * points system needs fixing 
+ * points system needs fixing //fixed
  * ui astetic
  
  
@@ -33,6 +33,7 @@ namespace KeyCommander
         Stats stats = new Stats();
         bool GameHasStarted = false;
         int points = 0;
+        string userSequence;
         public KeyCommander()
         {
             InitializeComponent();
@@ -52,7 +53,7 @@ namespace KeyCommander
             resetPics("user");
 
 
-            stats.addData(name_box.Text, timer.Text, CurrentCode.CompareSequence(CurrentCode.KeyCreationSequence), CurrentCode.KeyCreationSequence);
+            stats.addData(name_box.Text, timer.Text, CurrentCode.CompareSequence(userSequence), CurrentCode.KeyCreationSequence);
             NewSequence();
         }
         public void resetPics(string choice)
@@ -97,7 +98,7 @@ namespace KeyCommander
         {
             // this class generates a random key sequence the sequence constants are 1,2,3,4 each one representing up,down,left,right
             //below will be the users created sequence it will be a char array of ints  
-            string userSequence = "";
+            userSequence = "";
 
             PictureBox[] userBoxes = { inputBox1, inputBox2, inputBox3, inputBox4, inputBox5, inputBox6,
                 inputBox7, inputBox8, inputBox9, inputBox10, inputBox11, inputBox12};
@@ -157,7 +158,7 @@ namespace KeyCommander
             sequence = CurrentCode.CodeGenerator();
             char[] sequenceCode = CurrentCode.KeyCreationSequence.ToCharArray();
             PictureBox[] boxes = { Box1, Box2, Box3, Box4, Box5, Box6, Box7, Box8, Box9, Box10, Box11, Box12 };
-            points += Int32.Parse(CurrentCode.CompareSequence(CurrentCode.KeyCreationSequence));
+            points += Int32.Parse(CurrentCode.CompareSequence(userSequence));
             resetPics("pc");
             resetPics("user");
             GameHasStarted = true;

@@ -18,7 +18,7 @@ namespace KeyCommander
             TotalKeys = rand.Next(1, 12);
             for (int index = 0; index < TotalKeys; index++)
             {
-                KeyCreationSequence += rand.Next(1, 4) + "";
+                KeyCreationSequence += rand.Next(1, 5) + "";
 
             }
             return KeyCreationSequence;

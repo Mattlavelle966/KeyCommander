@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace KeyCommander
 {
@@ -12,6 +13,7 @@ namespace KeyCommander
         public string[] Sequence { get; set; }
         public string[] Time { get; set; }
         public string Name { get; set; }
+
 
         public int NumInputs { get; set; }
 
@@ -41,7 +43,7 @@ namespace KeyCommander
             //$"SEQ:{string.Join("", stats.Sequence[index])}\n  TimePassed:{string.Join("", stats.Time[index])}\n  Score:{string.Join("", stats.Score[index])}\n"
             for (int index = 0; index < NumInputs; index++)
             {
-                totalScore += Int32.Parse(Time[index].Replace("s", string.Empty));
+                totalScore += Int32.Parse(Time[index].Replace("S", string.Empty));
                 AvgTime += Int32.Parse(Score[index]);
 
             }
