@@ -13,7 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 //Key Commander Game
 //BUGS REPORT/TODOS
 /*
- * 
+ * l
  * Right arrow symbol is never shown
  * points system needs fixing 
  * ui astetic
