@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,8 @@ namespace KeyCommander
 {
     public partial class KeyCommander : Form
     {
-        const string Dir = "C:\\Users\\mattl\\source\\repos\\KeyCommander\\KeyCommander\\Resources\\";
+        string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
+        string Dir;
         int numOfInputs = 0;
         string up = "up.png", down = "down.png", left = "left.png", right = "right.png";
         int timerNum = 0;
@@ -79,6 +81,7 @@ namespace KeyCommander
         }
         private void startGame_Click(object sender, EventArgs e)
         {
+            Dir = string.Format("{0}Resources\\", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
             if (name_box.Text == "")
             {
                 MessageBox.Show("you must put your name in before you can play");

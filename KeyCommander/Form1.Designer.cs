@@ -89,9 +89,10 @@
             // 
             // startGame
             // 
-            this.startGame.Location = new System.Drawing.Point(301, 385);
+            this.startGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.startGame.Location = new System.Drawing.Point(255, 370);
             this.startGame.Name = "startGame";
-            this.startGame.Size = new System.Drawing.Size(75, 23);
+            this.startGame.Size = new System.Drawing.Size(108, 53);
             this.startGame.TabIndex = 0;
             this.startGame.Text = "start";
             this.startGame.UseVisualStyleBackColor = true;
@@ -99,9 +100,10 @@
             // 
             // Results
             // 
-            this.Results.Location = new System.Drawing.Point(428, 385);
+            this.Results.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.Results.Location = new System.Drawing.Point(430, 370);
             this.Results.Name = "Results";
-            this.Results.Size = new System.Drawing.Size(75, 23);
+            this.Results.Size = new System.Drawing.Size(150, 53);
             this.Results.TabIndex = 1;
             this.Results.Text = "results";
             this.Results.UseVisualStyleBackColor = true;
@@ -114,108 +116,108 @@
             // 
             // inputBox1
             // 
-            this.inputBox1.Location = new System.Drawing.Point(91, 259);
+            this.inputBox1.Location = new System.Drawing.Point(37, 259);
             this.inputBox1.Name = "inputBox1";
-            this.inputBox1.Size = new System.Drawing.Size(43, 50);
+            this.inputBox1.Size = new System.Drawing.Size(50, 50);
             this.inputBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox1.TabIndex = 2;
             this.inputBox1.TabStop = false;
             // 
             // inputBox2
             // 
-            this.inputBox2.Location = new System.Drawing.Point(140, 259);
+            this.inputBox2.Location = new System.Drawing.Point(93, 259);
             this.inputBox2.Name = "inputBox2";
-            this.inputBox2.Size = new System.Drawing.Size(43, 50);
+            this.inputBox2.Size = new System.Drawing.Size(50, 50);
             this.inputBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox2.TabIndex = 3;
             this.inputBox2.TabStop = false;
             // 
             // inputBox3
             // 
-            this.inputBox3.Location = new System.Drawing.Point(189, 259);
+            this.inputBox3.Location = new System.Drawing.Point(149, 259);
             this.inputBox3.Name = "inputBox3";
-            this.inputBox3.Size = new System.Drawing.Size(43, 50);
+            this.inputBox3.Size = new System.Drawing.Size(50, 50);
             this.inputBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox3.TabIndex = 4;
             this.inputBox3.TabStop = false;
             // 
             // inputBox4
             // 
-            this.inputBox4.Location = new System.Drawing.Point(238, 259);
+            this.inputBox4.Location = new System.Drawing.Point(205, 259);
             this.inputBox4.Name = "inputBox4";
-            this.inputBox4.Size = new System.Drawing.Size(43, 50);
+            this.inputBox4.Size = new System.Drawing.Size(50, 50);
             this.inputBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox4.TabIndex = 5;
             this.inputBox4.TabStop = false;
             // 
             // inputBox5
             // 
-            this.inputBox5.Location = new System.Drawing.Point(287, 259);
+            this.inputBox5.Location = new System.Drawing.Point(261, 259);
             this.inputBox5.Name = "inputBox5";
-            this.inputBox5.Size = new System.Drawing.Size(43, 50);
+            this.inputBox5.Size = new System.Drawing.Size(50, 50);
             this.inputBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox5.TabIndex = 6;
             this.inputBox5.TabStop = false;
             // 
             // inputBox6
             // 
-            this.inputBox6.Location = new System.Drawing.Point(336, 259);
+            this.inputBox6.Location = new System.Drawing.Point(317, 259);
             this.inputBox6.Name = "inputBox6";
-            this.inputBox6.Size = new System.Drawing.Size(43, 50);
+            this.inputBox6.Size = new System.Drawing.Size(50, 50);
             this.inputBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox6.TabIndex = 7;
             this.inputBox6.TabStop = false;
             // 
             // inputBox7
             // 
-            this.inputBox7.Location = new System.Drawing.Point(385, 259);
+            this.inputBox7.Location = new System.Drawing.Point(374, 259);
             this.inputBox7.Name = "inputBox7";
-            this.inputBox7.Size = new System.Drawing.Size(43, 50);
+            this.inputBox7.Size = new System.Drawing.Size(50, 50);
             this.inputBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox7.TabIndex = 8;
             this.inputBox7.TabStop = false;
             // 
             // inputBox8
             // 
-            this.inputBox8.Location = new System.Drawing.Point(439, 259);
+            this.inputBox8.Location = new System.Drawing.Point(430, 259);
             this.inputBox8.Name = "inputBox8";
-            this.inputBox8.Size = new System.Drawing.Size(43, 50);
+            this.inputBox8.Size = new System.Drawing.Size(50, 50);
             this.inputBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox8.TabIndex = 9;
             this.inputBox8.TabStop = false;
             // 
             // inputBox9
             // 
-            this.inputBox9.Location = new System.Drawing.Point(488, 259);
+            this.inputBox9.Location = new System.Drawing.Point(486, 259);
             this.inputBox9.Name = "inputBox9";
-            this.inputBox9.Size = new System.Drawing.Size(43, 50);
+            this.inputBox9.Size = new System.Drawing.Size(50, 50);
             this.inputBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox9.TabIndex = 10;
             this.inputBox9.TabStop = false;
             // 
             // inputBox10
             // 
-            this.inputBox10.Location = new System.Drawing.Point(537, 259);
+            this.inputBox10.Location = new System.Drawing.Point(547, 259);
             this.inputBox10.Name = "inputBox10";
-            this.inputBox10.Size = new System.Drawing.Size(43, 50);
+            this.inputBox10.Size = new System.Drawing.Size(50, 50);
             this.inputBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox10.TabIndex = 11;
             this.inputBox10.TabStop = false;
             // 
             // inputBox11
             // 
-            this.inputBox11.Location = new System.Drawing.Point(586, 259);
+            this.inputBox11.Location = new System.Drawing.Point(659, 259);
             this.inputBox11.Name = "inputBox11";
-            this.inputBox11.Size = new System.Drawing.Size(43, 50);
+            this.inputBox11.Size = new System.Drawing.Size(50, 50);
             this.inputBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox11.TabIndex = 12;
             this.inputBox11.TabStop = false;
             // 
             // inputBox12
             // 
-            this.inputBox12.Location = new System.Drawing.Point(635, 259);
+            this.inputBox12.Location = new System.Drawing.Point(603, 259);
             this.inputBox12.Name = "inputBox12";
-            this.inputBox12.Size = new System.Drawing.Size(43, 50);
+            this.inputBox12.Size = new System.Drawing.Size(50, 50);
             this.inputBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox12.TabIndex = 13;
             this.inputBox12.TabStop = false;
@@ -223,150 +225,155 @@
             // KeyCom
             // 
             this.KeyCom.AutoSize = true;
-            this.KeyCom.Location = new System.Drawing.Point(201, 54);
+            this.KeyCom.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.KeyCom.Location = new System.Drawing.Point(28, 31);
             this.KeyCom.Name = "KeyCom";
-            this.KeyCom.Size = new System.Drawing.Size(81, 13);
+            this.KeyCom.Size = new System.Drawing.Size(318, 47);
             this.KeyCom.TabIndex = 28;
             this.KeyCom.Text = "KeyCommander";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(458, 31);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.label2.Location = new System.Drawing.Point(358, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(239, 47);
             this.label2.TabIndex = 29;
             this.label2.Text = "Enter Name";
             // 
             // name_box
             // 
-            this.name_box.Location = new System.Drawing.Point(461, 54);
+            this.name_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.name_box.Location = new System.Drawing.Point(405, 58);
             this.name_box.Name = "name_box";
-            this.name_box.Size = new System.Drawing.Size(100, 20);
+            this.name_box.Size = new System.Drawing.Size(100, 53);
             this.name_box.TabIndex = 30;
             // 
             // timer
             // 
             this.timer.AutoSize = true;
+            this.timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.timer.Location = new System.Drawing.Point(328, 212);
             this.timer.Name = "timer";
-            this.timer.Size = new System.Drawing.Size(18, 13);
+            this.timer.Size = new System.Drawing.Size(43, 31);
             this.timer.TabIndex = 31;
             this.timer.Text = "0s";
             // 
             // points_lbl
             // 
             this.points_lbl.AutoSize = true;
+            this.points_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.points_lbl.Location = new System.Drawing.Point(402, 212);
             this.points_lbl.Name = "points_lbl";
-            this.points_lbl.Size = new System.Drawing.Size(20, 13);
+            this.points_lbl.Size = new System.Drawing.Size(47, 31);
             this.points_lbl.TabIndex = 32;
             this.points_lbl.Text = "0P";
             // 
             // Box12
             // 
-            this.Box12.Location = new System.Drawing.Point(635, 134);
+            this.Box12.Location = new System.Drawing.Point(654, 134);
             this.Box12.Name = "Box12";
-            this.Box12.Size = new System.Drawing.Size(43, 50);
+            this.Box12.Size = new System.Drawing.Size(50, 50);
             this.Box12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box12.TabIndex = 44;
             this.Box12.TabStop = false;
             // 
             // Box11
             // 
-            this.Box11.Location = new System.Drawing.Point(586, 134);
+            this.Box11.Location = new System.Drawing.Point(598, 134);
             this.Box11.Name = "Box11";
-            this.Box11.Size = new System.Drawing.Size(43, 50);
+            this.Box11.Size = new System.Drawing.Size(50, 50);
             this.Box11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box11.TabIndex = 43;
             this.Box11.TabStop = false;
             // 
             // Box10
             // 
-            this.Box10.Location = new System.Drawing.Point(537, 134);
+            this.Box10.Location = new System.Drawing.Point(542, 134);
             this.Box10.Name = "Box10";
-            this.Box10.Size = new System.Drawing.Size(43, 50);
+            this.Box10.Size = new System.Drawing.Size(50, 50);
             this.Box10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box10.TabIndex = 42;
             this.Box10.TabStop = false;
             // 
             // Box9
             // 
-            this.Box9.Location = new System.Drawing.Point(488, 134);
+            this.Box9.Location = new System.Drawing.Point(486, 134);
             this.Box9.Name = "Box9";
-            this.Box9.Size = new System.Drawing.Size(43, 50);
+            this.Box9.Size = new System.Drawing.Size(50, 50);
             this.Box9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box9.TabIndex = 41;
             this.Box9.TabStop = false;
             // 
             // Box8
             // 
-            this.Box8.Location = new System.Drawing.Point(439, 134);
+            this.Box8.Location = new System.Drawing.Point(430, 134);
             this.Box8.Name = "Box8";
-            this.Box8.Size = new System.Drawing.Size(43, 50);
+            this.Box8.Size = new System.Drawing.Size(50, 50);
             this.Box8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box8.TabIndex = 40;
             this.Box8.TabStop = false;
             // 
             // Box7
             // 
-            this.Box7.Location = new System.Drawing.Point(385, 134);
+            this.Box7.Location = new System.Drawing.Point(373, 134);
             this.Box7.Name = "Box7";
-            this.Box7.Size = new System.Drawing.Size(43, 50);
+            this.Box7.Size = new System.Drawing.Size(51, 50);
             this.Box7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box7.TabIndex = 39;
             this.Box7.TabStop = false;
             // 
             // Box6
             // 
-            this.Box6.Location = new System.Drawing.Point(336, 134);
+            this.Box6.Location = new System.Drawing.Point(317, 134);
             this.Box6.Name = "Box6";
-            this.Box6.Size = new System.Drawing.Size(43, 50);
+            this.Box6.Size = new System.Drawing.Size(50, 50);
             this.Box6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box6.TabIndex = 38;
             this.Box6.TabStop = false;
             // 
             // Box5
             // 
-            this.Box5.Location = new System.Drawing.Point(287, 134);
+            this.Box5.Location = new System.Drawing.Point(261, 134);
             this.Box5.Name = "Box5";
-            this.Box5.Size = new System.Drawing.Size(43, 50);
+            this.Box5.Size = new System.Drawing.Size(50, 50);
             this.Box5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box5.TabIndex = 37;
             this.Box5.TabStop = false;
             // 
             // Box4
             // 
-            this.Box4.Location = new System.Drawing.Point(238, 134);
+            this.Box4.Location = new System.Drawing.Point(205, 134);
             this.Box4.Name = "Box4";
-            this.Box4.Size = new System.Drawing.Size(43, 50);
+            this.Box4.Size = new System.Drawing.Size(50, 50);
             this.Box4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box4.TabIndex = 36;
             this.Box4.TabStop = false;
             // 
             // Box3
             // 
-            this.Box3.Location = new System.Drawing.Point(189, 134);
+            this.Box3.Location = new System.Drawing.Point(149, 134);
             this.Box3.Name = "Box3";
-            this.Box3.Size = new System.Drawing.Size(43, 50);
+            this.Box3.Size = new System.Drawing.Size(50, 50);
             this.Box3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box3.TabIndex = 35;
             this.Box3.TabStop = false;
             // 
             // Box2
             // 
-            this.Box2.Location = new System.Drawing.Point(140, 134);
+            this.Box2.Location = new System.Drawing.Point(93, 134);
             this.Box2.Name = "Box2";
-            this.Box2.Size = new System.Drawing.Size(43, 50);
+            this.Box2.Size = new System.Drawing.Size(50, 50);
             this.Box2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box2.TabIndex = 34;
             this.Box2.TabStop = false;
             // 
             // Box1
             // 
-            this.Box1.Location = new System.Drawing.Point(91, 134);
+            this.Box1.Location = new System.Drawing.Point(37, 134);
             this.Box1.Name = "Box1";
-            this.Box1.Size = new System.Drawing.Size(43, 50);
+            this.Box1.Size = new System.Drawing.Size(50, 50);
             this.Box1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Box1.TabIndex = 33;
             this.Box1.TabStop = false;
@@ -375,6 +382,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Box12);
             this.Controls.Add(this.Box11);
