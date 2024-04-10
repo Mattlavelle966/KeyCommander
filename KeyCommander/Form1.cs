@@ -132,7 +132,7 @@ namespace KeyCommander
             else if (e.KeyCode == Keys.A)
             {
                 userSequence += "3";
-                userBoxes[numOfInputs].Image = Properties.Resources.left;
+                userBoxes[numOfInputs].Image = Properties.Resources.right;
                 numOfInputs++;
 
             }
