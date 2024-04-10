@@ -16,10 +16,11 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 /*
  * 
  * Right arrow symbol is never shown //Fixed
- * points system needs fixing //NotFixed anymore
+ * points system needs fixing //Fixed
+ * Fix seconds timer
  * exe broken so far only on new user machine
  * RunningPath needs to be understood in more depth
- * ui astetic//probably wont bother with
+ * ui astetic
  
  
  

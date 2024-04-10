@@ -111,7 +111,7 @@
             // 
             // sqtime
             // 
-            this.sqtime.Interval = 1000;
+            this.sqtime.Interval = 10;
             this.sqtime.Tick += new System.EventHandler(this.Sqtimer);
             // 
             // inputBox1
