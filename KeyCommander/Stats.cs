@@ -14,7 +14,7 @@ namespace KeyCommander
         public string[] Time { get; set; }
         public string Name { get; set; }
 
-
+        public int Redundant { get; set; }
         public int NumInputs { get; set; }
 
 
@@ -26,6 +26,10 @@ namespace KeyCommander
             Sequence = new string[30];
             Time = new string[30];
             NumInputs = 0;
+        }
+        public Stats(int re)
+        {
+            Redundant = re;
         }
         public void addData(string name, string time, string score, string sequence)
         {

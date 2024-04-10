@@ -14,10 +14,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 //Key Commander Game
 //BUGS REPORT/TODOS
 /*
- * l
- * Right arrow symbol is never shown
- * points system needs fixing //fixed
- * ui astetic
+ * 
+ * Right arrow symbol is never shown //Fixed
+ * points system needs fixing //NotFixed anymore
+ * exe broken so far only on new user machine
+ * RunningPath needs to be understood in more depth
+ * ui astetic//probably wont bother with
  
  
  
@@ -50,11 +52,8 @@ namespace KeyCommander
             {
                 return;
             }//less nesting is more readable
-            //stats.AddStats(name_box.Text,CurrentCode.CompareSequence(CurrentCode.KeyCreationSequence),timer.Text,CurrentCode.KeyCreationSequence);
             numOfInputs = 0;
             resetPics("user");
-
-
             stats.addData(name_box.Text, timer.Text, CurrentCode.CompareSequence(userSequence), CurrentCode.KeyCreationSequence);
             NewSequence();
         }
@@ -63,7 +62,7 @@ namespace KeyCommander
             if (choice == "user")
             {
                 PictureBox[] userBoxes = { inputBox1, inputBox2, inputBox3, inputBox4, inputBox5, inputBox6,
-                inputBox7, inputBox8, inputBox9, inputBox10, inputBox11, inputBox12};
+                inputBox7, inputBox8, inputBox9, inputBox10, inputBox12, inputBox11};
                 for (int index = 0; index < userBoxes.Length; index++)
                 {
                     userBoxes[index].Image = null;
@@ -104,7 +103,7 @@ namespace KeyCommander
             userSequence = "";
 
             PictureBox[] userBoxes = { inputBox1, inputBox2, inputBox3, inputBox4, inputBox5, inputBox6,
-                inputBox7, inputBox8, inputBox9, inputBox10, inputBox11, inputBox12};
+                inputBox7, inputBox8, inputBox9, inputBox10, inputBox12, inputBox11};
             //if (numOfInputs <= KeyCodeGenerator.TotalKeys)
             //{
             if (!GameHasStarted)
@@ -142,7 +141,7 @@ namespace KeyCommander
             else if (e.KeyCode == Keys.A)
             {
                 userSequence += "3";
-                using (Bitmap bm = new Bitmap(Dir + left))
+                using (Bitmap bm = new Bitmap(Dir + left))                                                                                      
                 {
                     userBoxes[numOfInputs].Image = (Bitmap)bm.Clone(); ;
                 }

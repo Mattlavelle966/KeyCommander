@@ -42,8 +42,8 @@
             this.inputBox8 = new System.Windows.Forms.PictureBox();
             this.inputBox9 = new System.Windows.Forms.PictureBox();
             this.inputBox10 = new System.Windows.Forms.PictureBox();
-            this.inputBox11 = new System.Windows.Forms.PictureBox();
             this.inputBox12 = new System.Windows.Forms.PictureBox();
+            this.inputBox11 = new System.Windows.Forms.PictureBox();
             this.KeyCom = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.name_box = new System.Windows.Forms.TextBox();
@@ -71,8 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.inputBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inputBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box10)).BeginInit();
@@ -197,30 +197,30 @@
             // 
             // inputBox10
             // 
-            this.inputBox10.Location = new System.Drawing.Point(547, 259);
+            this.inputBox10.Location = new System.Drawing.Point(542, 259);
             this.inputBox10.Name = "inputBox10";
             this.inputBox10.Size = new System.Drawing.Size(50, 50);
             this.inputBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.inputBox10.TabIndex = 11;
             this.inputBox10.TabStop = false;
             // 
-            // inputBox11
-            // 
-            this.inputBox11.Location = new System.Drawing.Point(659, 259);
-            this.inputBox11.Name = "inputBox11";
-            this.inputBox11.Size = new System.Drawing.Size(50, 50);
-            this.inputBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.inputBox11.TabIndex = 12;
-            this.inputBox11.TabStop = false;
-            // 
             // inputBox12
             // 
-            this.inputBox12.Location = new System.Drawing.Point(603, 259);
+            this.inputBox12.Location = new System.Drawing.Point(654, 259);
             this.inputBox12.Name = "inputBox12";
             this.inputBox12.Size = new System.Drawing.Size(50, 50);
             this.inputBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.inputBox12.TabIndex = 13;
+            this.inputBox12.TabIndex = 12;
             this.inputBox12.TabStop = false;
+            // 
+            // inputBox11
+            // 
+            this.inputBox11.Location = new System.Drawing.Point(598, 259);
+            this.inputBox11.Name = "inputBox11";
+            this.inputBox11.Size = new System.Drawing.Size(50, 50);
+            this.inputBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.inputBox11.TabIndex = 13;
+            this.inputBox11.TabStop = false;
             // 
             // KeyCom
             // 
@@ -401,8 +401,8 @@
             this.Controls.Add(this.name_box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.KeyCom);
-            this.Controls.Add(this.inputBox12);
             this.Controls.Add(this.inputBox11);
+            this.Controls.Add(this.inputBox12);
             this.Controls.Add(this.inputBox10);
             this.Controls.Add(this.inputBox9);
             this.Controls.Add(this.inputBox8);
@@ -429,8 +429,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.inputBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inputBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inputBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Box10)).EndInit();
@@ -463,8 +463,8 @@
         private System.Windows.Forms.PictureBox inputBox8;
         private System.Windows.Forms.PictureBox inputBox9;
         private System.Windows.Forms.PictureBox inputBox10;
-        private System.Windows.Forms.PictureBox inputBox11;
         private System.Windows.Forms.PictureBox inputBox12;
+        private System.Windows.Forms.PictureBox inputBox11;
         private System.Windows.Forms.Label KeyCom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox name_box;
