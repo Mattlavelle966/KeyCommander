@@ -17,9 +17,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
  * 
  * Right arrow symbol is never shown //Fixed
  * points system needs fixing //Fixed
+ * exe broken so far only on new user machine//maybeFixed
+ * bitmap replaced should be //fixed
  * Fix seconds timer
- * exe broken so far only on new user machine
- * RunningPath needs to be understood in more depth
  * ui astetic
  
  
@@ -29,10 +29,7 @@ namespace KeyCommander
 {
     public partial class KeyCommander : Form
     {
-        string RunningPath = AppDomain.CurrentDomain.BaseDirectory;
-        string Dir;
         int numOfInputs = 0;
-        string up = "up.png", down = "down.png", left = "left.png", right = "right.png";
         int timerNum = 0;
         KeyCodeGenerator CurrentCode;
         Stats stats = new Stats();
@@ -85,7 +82,6 @@ namespace KeyCommander
         }
         private void startGame_Click(object sender, EventArgs e)
         {
-            Dir = string.Format("{0}Resources\\", Path.GetFullPath(Path.Combine(RunningPath, @"..\..\")));
             if (name_box.Text == "")
             {
                 MessageBox.Show("you must put your name in before you can play");
@@ -98,8 +94,8 @@ namespace KeyCommander
 
         private void Results_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(stats.displayDataAsStr());
             sqtime.Stop();
+            MessageBox.Show(stats.displayDataAsStr());
         }
         private void KeyCommander_KeyDown(object sender, KeyEventArgs e)
         {
@@ -117,38 +113,26 @@ namespace KeyCommander
             if (e.KeyCode == Keys.W)
             {
                 userSequence += "1";
-                using (Bitmap bm = new Bitmap(Dir + up))
-                {
-                    userBoxes[numOfInputs].Image = (Bitmap)bm.Clone(); ;
-                }
+                userBoxes[numOfInputs].Image = Properties.Resources.up; 
                 numOfInputs++;
 
             }
             else if (e.KeyCode == Keys.S)
             {
                 userSequence += "2";
-                using (Bitmap bm = new Bitmap(Dir + down))
-                {
-                    userBoxes[numOfInputs].Image = (Bitmap)bm.Clone(); ;
-                }
+                userBoxes[numOfInputs].Image = Properties.Resources.down;
                 numOfInputs++;
             }
             else if (e.KeyCode == Keys.D)
             {
                 userSequence += "4";
-                using (Bitmap bm = new Bitmap(Dir + right))
-                {
-                    userBoxes[numOfInputs].Image = (Bitmap)bm.Clone(); ;
-                }
+                userBoxes[numOfInputs].Image = Properties.Resources.left; 
                 numOfInputs++;
             }
             else if (e.KeyCode == Keys.A)
             {
                 userSequence += "3";
-                using (Bitmap bm = new Bitmap(Dir + left))                                                                                      
-                {
-                    userBoxes[numOfInputs].Image = (Bitmap)bm.Clone(); ;
-                }
+                userBoxes[numOfInputs].Image = Properties.Resources.left;
                 numOfInputs++;
 
             }
@@ -169,15 +153,10 @@ namespace KeyCommander
             GameHasStarted = true;
             for (int index = 0; index < sequenceCode.Length; index++)
             {
-                string direc = "";
-                if (sequenceCode[index] == '1') { direc = Dir + "up.png"; }
-                else if (sequenceCode[index] == '2') { direc = Dir + "down.png"; }
-                else if (sequenceCode[index] == '3') { direc = Dir + "left.png"; }
-                else if (sequenceCode[index] == '4') { direc = Dir + "right.png"; }
-                using (Bitmap bm = new Bitmap(direc))
-                {
-                    boxes[index].Image = (Bitmap)bm.Clone();
-                }
+                if (sequenceCode[index] == '1') { boxes[index].Image = Properties.Resources.up; }
+                else if (sequenceCode[index] == '2') { boxes[index].Image = Properties.Resources.down; }
+                else if (sequenceCode[index] == '3') { boxes[index].Image = Properties.Resources.left; }
+                else if (sequenceCode[index] == '4') { boxes[index].Image = Properties.Resources.right; }
 
 
             }
