@@ -19,7 +19,7 @@ namespace KeyCommander
             for (int index = 0; index < TotalKeys; index++)
             {
                 KeyCreationSequence += rand.Next(1, 5) + "";
-
+                
             }
             return KeyCreationSequence;
         }

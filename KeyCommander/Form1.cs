@@ -62,7 +62,7 @@ namespace KeyCommander
             if (choice == "user")
             {
                 PictureBox[] userBoxes = { inputBox1, inputBox2, inputBox3, inputBox4, inputBox5, inputBox6,
-                inputBox7, inputBox8, inputBox9, inputBox10, inputBox12, inputBox11};
+                inputBox7, inputBox8, inputBox9, inputBox10, inputBox11, inputBox12};
                 for (int index = 0; index < userBoxes.Length; index++)
                 {
                     userBoxes[index].Image = null;
