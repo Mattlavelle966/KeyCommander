@@ -67,7 +67,7 @@ namespace KeyCommander
                 inputBox7, inputBox8, inputBox9, inputBox10, inputBox11, inputBox12};
                 for (int index = 0; index < userBoxes.Length; index++)
                 {
-                    userBoxes[index].Image = null;
+                    userBoxes[index].Image = null;//
                 }
 
             }
