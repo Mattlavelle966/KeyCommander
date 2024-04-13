@@ -45,7 +45,6 @@ namespace KeyCommander
         private void Sqtimer(object sender, EventArgs e)
         {
             
-            points_lbl.Text = points + "P";
             bool isChallangeComplete = numOfInputs >= CurrentCode.TotalKeys;//for more redability 
             if (!isChallangeComplete)
             {
@@ -176,6 +175,7 @@ namespace KeyCommander
         private void SecondsTimer_Tick(object sender, EventArgs e)
         {
             timer.Text = timerNum++ + "S";
+            points_lbl.Text = points + "P";
         }
     }
 }
