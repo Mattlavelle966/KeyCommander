@@ -61,6 +61,7 @@
             this.Box3 = new System.Windows.Forms.PictureBox();
             this.Box2 = new System.Windows.Forms.PictureBox();
             this.Box1 = new System.Windows.Forms.PictureBox();
+            this.SecondsTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.inputBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox3)).BeginInit();
@@ -111,7 +112,7 @@
             // 
             // sqtime
             // 
-            this.sqtime.Interval = 10;
+            this.sqtime.Interval = 1;
             this.sqtime.Tick += new System.EventHandler(this.Sqtimer);
             // 
             // inputBox1
@@ -378,6 +379,11 @@
             this.Box1.TabIndex = 33;
             this.Box1.TabStop = false;
             // 
+            // SecondsTimer
+            // 
+            this.SecondsTimer.Interval = 1000;
+            this.SecondsTimer.Tick += new System.EventHandler(this.SecondsTimer_Tick);
+            // 
             // KeyCommander
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,6 +424,7 @@
             this.KeyPreview = true;
             this.Name = "KeyCommander";
             this.Text = "KeyCommander";
+            this.Load += new System.EventHandler(this.KeyCommander_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyCommander_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.inputBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox2)).EndInit();
@@ -482,6 +489,7 @@
         private System.Windows.Forms.PictureBox Box3;
         private System.Windows.Forms.PictureBox Box2;
         private System.Windows.Forms.PictureBox Box1;
+        private System.Windows.Forms.Timer SecondsTimer;
     }
 }
 
