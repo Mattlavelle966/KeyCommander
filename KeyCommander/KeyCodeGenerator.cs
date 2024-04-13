@@ -32,7 +32,7 @@ namespace KeyCommander
             }
             else
             {
-                char[] userSequence = sequence.ToCharArray();
+                char[] userSequence = sequence.ToCharArray();//string func used
                 char[] generatedSequence = KeyCreationSequence.ToCharArray();
                 for (int index = 0; index < userSequence.Length; index++)
                 {

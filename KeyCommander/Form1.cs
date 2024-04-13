@@ -17,9 +17,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
  * 
  * Right arrow symbol is never shown //Fixed
  * points system needs fixing //Fixed
- * exe broken so far only on new user machine//maybeFixed
- * bitmap replaced should be //fixed
- * Fix seconds timer
+ * exe broken so far only on new user machine//Fixed
+ * bitmap replaced should be //Fixed
+ * Fix seconds timer//Fixed
  * ui astetic
  
  
@@ -31,11 +31,12 @@ namespace KeyCommander
     {
         int numOfInputs = 0;
         int timerNum = 0;
+        int points = 0;
+        bool GameHasStarted = false;
+        string userSequence;
         KeyCodeGenerator CurrentCode;
         Stats stats = new Stats();
-        bool GameHasStarted = false;
-        int points = 0;
-        string userSequence;
+
         public KeyCommander()
         {
             InitializeComponent();
@@ -43,7 +44,7 @@ namespace KeyCommander
 
         private void Sqtimer(object sender, EventArgs e)
         {
-            timer.Text = timerNum++ + "S";
+            
             points_lbl.Text = points + "P";
             bool isChallangeComplete = numOfInputs >= CurrentCode.TotalKeys;//for more redability 
             if (!isChallangeComplete)
@@ -95,6 +96,7 @@ namespace KeyCommander
         private void Results_Click(object sender, EventArgs e)
         {
             sqtime.Stop();
+            SecondsTimer.Stop();
             MessageBox.Show(stats.displayDataAsStr());
         }
         private void KeyCommander_KeyDown(object sender, KeyEventArgs e)
@@ -161,6 +163,19 @@ namespace KeyCommander
 
             }
             sqtime.Start();
+            SecondsTimer.Start();
+        }
+
+
+       
+        private void KeyCommander_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Welcome To Key Commander\nGoal: Recreate arrow sequence\nControls\n    W = up\n    S = down\n    D = right\n    A = left\n-input your name\n-Press Start to begin\n-press results for your score");
+        }
+
+        private void SecondsTimer_Tick(object sender, EventArgs e)
+        {
+            timer.Text = timerNum++ + "S";
         }
     }
 }

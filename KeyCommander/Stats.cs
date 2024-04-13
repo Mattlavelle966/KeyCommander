@@ -14,7 +14,7 @@ namespace KeyCommander
         public string[] Time { get; set; }
         public string Name { get; set; }
 
-        public int Redundant { get; set; }
+        public int Redundant { get; set; }//this code is purley meant to satisfy assignment criteria
         public int NumInputs { get; set; }
 
 
@@ -47,7 +47,7 @@ namespace KeyCommander
             //$"SEQ:{string.Join("", stats.Sequence[index])}\n  TimePassed:{string.Join("", stats.Time[index])}\n  Score:{string.Join("", stats.Score[index])}\n"
             for (int index = 0; index < NumInputs; index++)
             {
-                totalScore += Int32.Parse(Time[index].Replace("S", string.Empty));
+                totalScore += Int32.Parse(Time[index].Replace("S", string.Empty));//string func used
                 AvgTime += Int32.Parse(Score[index]);
 
             }
