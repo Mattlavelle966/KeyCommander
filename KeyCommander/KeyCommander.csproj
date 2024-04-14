@@ -122,5 +122,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\mixkit-futuristic-door-open-183.mp3" />
+    <Content Include="Resources\pushbtn.wav" />
+    <Content Include="Resources\return.wav" />
+    <Content Include="Resources\longSwooshForOpen.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

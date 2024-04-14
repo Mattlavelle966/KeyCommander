@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,13 +15,14 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 //Key Commander Game
 //BUGS REPORT/TODOS
 /*
- * 
+ * local path for testing C:\Users\mattl\source\repos\KeyCommander\KeyCommander\Resources
  * Right arrow symbol is never shown //Fixed
  * points system needs fixing //Fixed
  * exe broken so far only on new user machine//Fixed
  * bitmap replaced should be //Fixed
  * Fix seconds timer//Fixed
- * ui astetic
+ * ui astetic//Fixed
+ * adding sound
  
  
  
@@ -36,6 +38,8 @@ namespace KeyCommander
         string userSequence;
         KeyCodeGenerator CurrentCode;
         Stats stats = new Stats();
+        SoundPlayer resutSound = new SoundPlayer();
+        
 
         public KeyCommander()
         {
@@ -94,6 +98,9 @@ namespace KeyCommander
 
         private void Results_Click(object sender, EventArgs e)
         {
+            resutSound.SoundLocation = "return.wav";//???????????????????
+
+            resutSound.Play();//not currently working error(wav file not correct)
             sqtime.Stop();
             SecondsTimer.Stop();
             MessageBox.Show(stats.displayDataAsStr());
