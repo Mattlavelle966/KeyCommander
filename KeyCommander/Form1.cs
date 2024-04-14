@@ -177,5 +177,10 @@ namespace KeyCommander
             timer.Text = timerNum++ + "S";
             points_lbl.Text = points + "P";
         }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

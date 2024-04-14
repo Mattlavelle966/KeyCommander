@@ -62,6 +62,7 @@
             this.Box2 = new System.Windows.Forms.PictureBox();
             this.Box1 = new System.Windows.Forms.PictureBox();
             this.SecondsTimer = new System.Windows.Forms.Timer(this.components);
+            this.Exit_btn = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inputBox3)).BeginInit();
@@ -90,24 +91,26 @@
             // 
             // startGame
             // 
+            this.startGame.BackColor = System.Drawing.Color.Lime;
             this.startGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
             this.startGame.Location = new System.Drawing.Point(255, 370);
             this.startGame.Name = "startGame";
             this.startGame.Size = new System.Drawing.Size(108, 53);
             this.startGame.TabIndex = 0;
             this.startGame.Text = "start";
-            this.startGame.UseVisualStyleBackColor = true;
+            this.startGame.UseVisualStyleBackColor = false;
             this.startGame.Click += new System.EventHandler(this.startGame_Click);
             // 
             // Results
             // 
+            this.Results.BackColor = System.Drawing.Color.Blue;
             this.Results.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
             this.Results.Location = new System.Drawing.Point(430, 370);
             this.Results.Name = "Results";
             this.Results.Size = new System.Drawing.Size(150, 53);
             this.Results.TabIndex = 1;
             this.Results.Text = "results";
-            this.Results.UseVisualStyleBackColor = true;
+            this.Results.UseVisualStyleBackColor = false;
             this.Results.Click += new System.EventHandler(this.Results_Click);
             // 
             // sqtime
@@ -227,6 +230,7 @@
             // 
             this.KeyCom.AutoSize = true;
             this.KeyCom.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.KeyCom.ForeColor = System.Drawing.Color.Red;
             this.KeyCom.Location = new System.Drawing.Point(28, 31);
             this.KeyCom.Name = "KeyCom";
             this.KeyCom.Size = new System.Drawing.Size(318, 47);
@@ -237,6 +241,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(358, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(239, 47);
@@ -245,7 +250,9 @@
             // 
             // name_box
             // 
+            this.name_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.name_box.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.name_box.ForeColor = System.Drawing.Color.Red;
             this.name_box.Location = new System.Drawing.Point(405, 58);
             this.name_box.Name = "name_box";
             this.name_box.Size = new System.Drawing.Size(100, 53);
@@ -255,6 +262,7 @@
             // 
             this.timer.AutoSize = true;
             this.timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.timer.ForeColor = System.Drawing.Color.Red;
             this.timer.Location = new System.Drawing.Point(328, 212);
             this.timer.Name = "timer";
             this.timer.Size = new System.Drawing.Size(43, 31);
@@ -265,6 +273,7 @@
             // 
             this.points_lbl.AutoSize = true;
             this.points_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.points_lbl.ForeColor = System.Drawing.Color.Red;
             this.points_lbl.Location = new System.Drawing.Point(402, 212);
             this.points_lbl.Name = "points_lbl";
             this.points_lbl.Size = new System.Drawing.Size(47, 31);
@@ -384,12 +393,25 @@
             this.SecondsTimer.Interval = 1000;
             this.SecondsTimer.Tick += new System.EventHandler(this.SecondsTimer_Tick);
             // 
+            // Exit_btn
+            // 
+            this.Exit_btn.AutoSize = true;
+            this.Exit_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F);
+            this.Exit_btn.ForeColor = System.Drawing.Color.White;
+            this.Exit_btn.Location = new System.Drawing.Point(741, 8);
+            this.Exit_btn.Name = "Exit_btn";
+            this.Exit_btn.Size = new System.Drawing.Size(47, 47);
+            this.Exit_btn.TabIndex = 45;
+            this.Exit_btn.Text = "X";
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
             // KeyCommander
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Box12);
             this.Controls.Add(this.Box11);
             this.Controls.Add(this.Box10);
@@ -421,6 +443,7 @@
             this.Controls.Add(this.inputBox1);
             this.Controls.Add(this.Results);
             this.Controls.Add(this.startGame);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "KeyCommander";
             this.Text = "KeyCommander";
@@ -490,6 +513,7 @@
         private System.Windows.Forms.PictureBox Box2;
         private System.Windows.Forms.PictureBox Box1;
         private System.Windows.Forms.Timer SecondsTimer;
+        private System.Windows.Forms.Label Exit_btn;
     }
 }
 
